@@ -6,6 +6,10 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="new_style.css">
     <link rel="stylesheet" type="text/css" href="stabilize.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src = "js/slick.min.js"></script>
+    <script src = "js/script.js"></script>
     
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 </head>
@@ -14,187 +18,185 @@
      <div class="container">
         <header>
             <div class="content_header">
-            <div>
-                <img src="images/logo.png" class = "logo" alt="" title="logo">
-            </div>
+                <div>
+                    <img src="images/logo.png" class = "logo" alt="" title="logo">
+                </div>
             <div class="phone_text">
                 <a href="">+7(499) 777-77-77</a>
                 <a href="">+7(499) 777-77-77</a>
-            
+                <a href="#"><button onclick="show('block')">Зворотній зв'язок</button></a>
             </div>
             </div>
         </header>
        
-    <menu>
-        <div class="content_menu">
-            <ul>
-                <li><a href="">Головна</a></li>
-                <li><a href="">Каталог</a></li>
-                <li><a href="">Доставка і оплата</a></li>
-                <li><a href="">Прайс-лист</a></li>
-                <li><a href="">Контакти</a></li>
-            </ul>
-        </div>
-    </menu>
+        <menu>
+            <div class="content_menu">
+                <ul>
+                    <li><span><a href="">Головна</a></span></li>
+                    <li><span><a href="">Каталог</a></span></li>
+                    <li><a href="">Доставка і оплата</span></li>
+                    <li><span><a href="">Прайс-лист</a></span></li>
+                    <li><span><a href="">Контакти</a></span></li>
+                </ul>
+            </div>
+        </menu>
 
 
+        <div class="slider_conatainer">
+        <div class = "slider">
 
+            <div class = "slides">
+                <img src = "images/first_slider.png" alt="1" title="">
+            </div>
 
-    <div class = "slider">
-        <div class = "slides">
-        <ul>
-            <li><img src = "images/first_slider.png" alt="1" title=""></li>
-            <li><img src = "images/second_slider.png" alt="2" title=""></li>
-        </ul>
-    </div>
-    </div>
+            <div class="slides">
+                <img src = "images/second_slider.png" alt="2" title="">
+            </div>
 
-
-
-
-
-<div class="crumbs"> Головна/Каталог/ </div>
-
-   
-    <main>
-        <div class="left">
-            <div class="menu_catalog">
-            <ul>
-                <li><a href="#">Автомобілі</a>
-                    <ul>
-                        <li><a href="#"><span>BMW</span></a></li>
-                        <li><a href="#"><span>Renault</span></a></li>
-                        <li><a href="#"><span>Жигуль</span></a></li>
-                    </ul>
-                </li>
-
-                <li><a href="#">Побутова техніка</a>
-                    <ul>
-                        <li><a href="#"><span>Мікрохвильовки</span></a></li>
-                        <li><a href="#"><span>Холодильники</span></a></li>
-                        <li><a href="#"><span>Посудомийні машини</span></a></li>
-                        <li><a href="#"><span>Чайники</span></a></li>
-                    </ul>
-                </li>
-
-                <li><a href="#">Телефонна техніка</a>
-                    <ul>
-                        <li><a href="#"><span>Meizu</span></a></li>
-                        <li><a href="#"><span>Xiaomi</span></a></li>
-                        <li><a href="#"><span>Iphone</span></a></li>
-                    </ul>
-                </li>
-
-                <li><a href="#">Комп'ютери</a>
-                    <ul>
-                        <li><a href="#"><span>Asus</span></a></li>
-                        <li><a href="#"><span>Acer</span></a></li>
-                        <li><a href="#"><span>Lenovo</span></a></li>
-                    </ul>
-                </li>
-
-                <li><a href="#">Одяг</a>
-                    <ul>
-                        <li><a href="#"><span>Футболки</span></a></li>
-                        <li><a href="#"><span>Штани</span></a></li>
-                        <li><a href="#"><span>Худі</span></a></li>
-                    </ul>
-                </li>
-
-                <li><a href="#">Нерухомість</a>
-                    <ul>
-                        <li><a href="#"><span>Квартири</span></a></li>
-                        <li><a href="#"><span>Приватні будинки</span></a></li>
-                        <li><a href="#"><span>Торгові центри</span></a></li>
-                    </ul>
-                </li>
-
-            </ul>
-        </div>
-        <div class="excel_image">
-        <img src="images/excel.png" alt="" title="">
         </div>
         </div>
 
-        <div class="content">
-             <div class="catalog">
-                <div class = "first_catalog">
 
-                    <div class="product">
-                        <div><img src="images/kek.jpg" alt="" class="product_img"></div>
-                             <div class="text_product">Самый клевый чайник, который надо купить!</div>
-                                <div class="f"><span>1900 руб.</span>
-                                      <a href=""><img src="images/basket.png" alt="" title="" class="basket"></a>
-                                </div>
+    <div class="crumbs"><a href="#">Головна</a>&nbsp;/&nbsp;<a href="#">Каталог</a>&nbsp;/</div>
+
+    
+        <main>
+            <div class="left">
+                <div class="menu_catalog">
+                <ul>
+                    <li><a href="#">Автомобілі</a>
+                        <ul>
+                            <li><a href="#"><span>BMW</span></a></li>
+                            <li><a href="#"><span>Renault</span></a></li>
+                            <li><a href="#"><span>Жигуль</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Побутова техніка</a>
+                        <ul>
+                            <li><a href="#"><span>Мікрохвильовки</span></a></li>
+                            <li><a href="#"><span>Холодильники</span></a></li>
+                            <li><a href="#"><span>Посудомийні машини</span></a></li>
+                            <li><a href="#"><span>Чайники</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Телефонна техніка</a>
+                        <ul>
+                            <li><a href="#"><span>Meizu</span></a></li>
+                            <li><a href="#"><span>Xiaomi</span></a></li>
+                            <li><a href="#"><span>Iphone</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Комп'ютери</a>
+                        <ul>
+                            <li><a href="#"><span>Asus</span></a></li>
+                            <li><a href="#"><span>Acer</span></a></li>
+                            <li><a href="#"><span>Lenovo</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Одяг</a>
+                        <ul>
+                            <li><a href="#"><span>Футболки</span></a></li>
+                            <li><a href="#"><span>Штани</span></a></li>
+                            <li><a href="#"><span>Худі</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Нерухомість</a>
+                        <ul>
+                            <li><a href="#"><span>Квартири</span></a></li>
+                            <li><a href="#"><span>Приватні будинки</span></a></li>
+                            <li><a href="#"><span>Торгові центри</span></a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="excel_image">
+            <img src="images/excel.png" alt="" title="">
+            </div>
+            </div>
+
+            <div class="centerblock">
+                <div class="catalog">
+                    <div class = "first_catalog">
+
+                        <div class="product">
+                            <div><img src="images/product_photo.png" alt="" class="product_img"></div>
+                                <div class="text_product">Самый клевый чайник, который надо купить!</div>
+                                    <div class="f"><span>1900 руб.</span>
+                                        <a href=""><img src="images/basket.png" alt="" title="" class="basket"></a>
+                                    </div>
+                        </div>
+            
+            <div class="product">
+                <div><img src="images/product_photo.png" alt="" class="product_img"></div>
+                    <div class="text_product">Самый клевый чайник, который надо купить!</div>
+                        <div class="f"><span>1900 руб.</span>
+                            <a href=""><img src="images/basket.png" alt="" title="" class="basket"></a>
+                        </div>
                     </div>
-        
+
+                    
+    
         <div class="product">
-            <div><img src="images/kek.jpg" alt="" class="product_img"></div>
-                <div class="text_product">Самый клевый чайник, который надо купить!</div>
-                    <div class="f"><span>1900 руб.</span>
-                        <a href=""><img src="images/basket.png" alt="" title="" class="basket"></a>
+                    <div><img src="images/product_photo.png" alt="" class="product_img"></div>
+                        <div class="text_product">Самый клевый чайник, который надо купить!</div>
+                            <div class="f"><span>1900 руб.</span>
+                                <a href=""><img src="images/basket.png" alt="" title="" class="basket"></a>
+                        </div>
                     </div>
-                </div>
+        </div>
 
-                
-   
-     <div class="product">
-                <div><img src="images/kek.jpg" alt="" class="product_img"></div>
-                     <div class="text_product">Самый клевый чайник, который надо купить!</div>
-                        <div class="f"><span>1900 руб.</span>
-                            <a href=""><img src="images/basket.png" alt="" title="" class="basket"></a>
-                       </div>
-                </div>
-    </div>
+        <div class="second_catalog">
+        <div class="new_product">
+                    <div><img src="images/product_photo.png" alt="" class="product_img"></div>
+                        <div class="text_product">Самый клевый чайник, который надо купить!</div>
+                            <div class="f"><span>1900 руб.</span>
+                                <a href=""><img src="images/basket.png" alt="" title="" class="basket"></a>
+                        </div>
+                    </div>
 
-    <div class="second_catalog">
-     <div class="new_product">
-                <div><img src="images/kek.jpg" alt="" class="product_img"></div>
-                     <div class="text_product">Самый клевый чайник, который надо купить!</div>
-                        <div class="f"><span>1900 руб.</span>
-                            <a href=""><img src="images/basket.png" alt="" title="" class="basket"></a>
-                       </div>
-                </div>
+        <div class="new_product">
+                    <div><img src="images/product_photo.png" alt="" class="product_img"></div>
+                        <div class="text_product">Самый клевый чайник, который надо купить!</div>
+                            <div class="f"><span>1900 руб.</span>
+                                <a href=""><img src="images/basket.png" alt="" title="" class="basket"></a>
+                        </div>
+                    </div>
+        </div>
+    </div> 
+        
 
-     <div class="new_product">
-                <div><img src="images/kek.jpg" alt="" class="product_img"></div>
-                     <div class="text_product">Самый клевый чайник, который надо купить!</div>
-                        <div class="f"><span>1900 руб.</span>
-                            <a href=""><img src="images/basket.png" alt="" title="" class="basket"></a>
-                       </div>
-                </div>
-    </div>
-</div> 
+        <div class="number_block">
+            <div class = "number_pages">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li><span>3</span></li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                </ul>
+            </div> 
+        </div>
+
+        <div class="line"></div>
+        
+            <div class="textcols">
+                <p class="textcols-left">Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души.</p>
+                <p class="textcols-right">Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам.При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.</p>
+            </div> 
+        
     
+    </div>  
 
-    <div class="number_block">
-        <div class = "number_pages">
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li><span>3</span></li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-                <li>7</li>
-                <li>8</li>
-            </ul>
-        </div> 
-    </div>
-
-    <div class="line"></div>
-    
-        <div class="textcols">
-            <p class="textcols-left">Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души.</p>
-            <p class="textcols-right">Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам.При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.</p>
-        </div> 
-    
-  
-</div>  
-
-</main>
-
-    
+    </main>
 
     <footer>
         <div class="content_footer">
@@ -203,11 +205,11 @@
                 oxit@ukr.net
             </div>
             <div class = "center_footer">
-                <span class="block">Головна</span>
-                <span class="block">Каталог</span>   
-                <span class="block">Доставка і оплата</span> 
-                <span class="block">Прайст-лист</span>
-                <span class="block">Контакти</span> 
+                <span class="block"><a href="">Головна</a></span>
+                <span class="block"><a href="">Каталог</a></span>   
+                <span class="block"><a href="">Доставка і оплата</a>    </span> 
+                <span class="block"><a href="">Прайст-лист</a></span>
+                <span class="block"><a href="">Контакти</a></span> 
             </div>
             <div class="right_footer">
                 <img src="images/company.png" alt="" title="" class="company"> 
@@ -219,10 +221,28 @@
                 </div>
         </footer>
     
+    <div onclick="show('none')" id="gray"></div>
+    
+<div id="window">
+    <img class="close" src="images/exit_copy.png" class = "exit" alt=""  onclick="show('none')">
+    <div class="form">
+        <h2><b>Зворотній зв'язок</b></h2>
+        <form action="index.html" name="f1">
+            <span>Ваше ім'я*</span>
+            <input type="text" placeholder="Поле обов'язкове для заповнення" name="first_name" class="input" required>
+            <span>Телефон*</span>
+            <input type="number" placeholder="Поле обов'язкове для заповнення" name="phone" class="input" required>
+            <span>Email*</span>
+            <input type="email" placeholder="Поле обов'язкове для заповнення" name="email" class="input" required> 
+            <span>Повідомлення</span>
+            <textarea name="text" class="message"  required></textarea>
+            <input type="submit" value="Відправити" name="sab">
+         
+        
+        </form>
+    </div>
+</div>
 </body>
 </html>
 
-   
 
- 
-     

@@ -1,0 +1,177 @@
+.regButton {
+    color: #767676;
+    font-family: "PT Sans";
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal; 
+    border-color: #dcdcdc;
+    background-color: #dcdcdc;
+}
+
+button 
+{
+    background-color: #dcdcdc;
+    border: 1px solid #dcdcdc;
+    font-size: 19px;
+    color: #767676;
+    font-family: "PT Sans";
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 46px;
+}
+
+
+#window {
+    width: 464px;
+    height: 576px;
+    margin: 40px auto;
+    background: #fff;
+    z-index: 150; display: none;
+    position: fixed; left: 0;right: 0;top:0;bottom: 0;
+} 
+
+.form
+{
+    width: 339px;
+    margin: 0px auto 0px auto; 
+    text-align: center; 
+    padding-bottom: 100px;
+} 
+
+.input
+{
+    width: 339px; 
+    height: 40px;
+    padding: 5px; 
+    margin-bottom: 22px;
+    box-sizing: border-box; 
+} 
+
+#gray{opacity: 0.8; padding: 15px;
+    background-color: rgba(1,1,1,0.75); position: fixed; left: 0;right: 0;top:0;bottom: 0; display: none; z-index:100; overflow: auto; } 
+
+
+.close{ float: right; cursor: pointer; padding: 2px; background: #ccc;} 
+
+
+
+form span 
+{
+    text-align: center;
+    color: #535353;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.message
+{
+        width: 333px;
+        height: 140px;
+        margin: 0px auto 22px auto;
+}
+
+.send
+{
+    width: 128px;
+    height: 42px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #777777;
+    color: black;
+    border-color: #777777;
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.form a 
+{
+    width: 128px;
+    height: 42px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #777777;
+    color: black;
+    border-color: #777777;
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+input:invalid 
+{
+    background-color: #ffdddd;
+    border-color: red;
+}
+
+input::placeholder
+{
+    color: #dc7f7f;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-style: italic;
+    letter-spacing: normal;
+    line-height: normal;
+}
+  
+input[type=submit]:valid
+{
+    width: 128px;
+    height: 42px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #777777;
+    color: #fff;
+    border: 1px solid #777777;
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+}
+  
+input:valid 
+  {
+    background-color: #ddffdd;
+    border-color: green;
+  }
+  
+.exit
+{
+    width: 10px;
+    height: 10px;
+}
+
+h2
+{
+    margin-top: 35px;
+    color: #535353;
+    font-family: "PT Sans";
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+}

@@ -1,110 +1,89 @@
-.slider 
+/* Доповнення стилів для 3 макету */
+
+.slider_conatainer
 {
     width: 100%;
-    margin-top: 10px;  
-    margin-bottom: 30px;
+    background-color: #f8f8f8;
+    z-index: 100;
+}
+
+.slider 
+{
+    z-index: 100;
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;   
 }
 
 
 .slides  
 {
-    width: 1248px;
-    height: 462px;
-    /* overflow: hidden; */
-    /* position: relative; */
-    display: block; 
-    margin: -62px auto 0 auto;
+    padding: 0px 40px 0px 40px;
+    margin-top: -64px;
+    text-align: center;
+    margin-bottom: 10px;
+    z-index: 100; 
 }
 
-.slides ul {
-    list-style:none;
-    position:relative;
-}
+.slick-slider
+{}
 
-@-webkit-keyframes anim_slides {
-    0% {
-        opacity:0;
-    }
-    6% {
-        opacity:1;
-    }
-    24% {
-        opacity:1;
-    }
-    30% {
-        opacity:1;
-    }
-    
-    40% {
-        opacity: 1;        
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    60% {
-        opacity: 0;
-    }
-    100% {
-        opacity:0;
-    }
-}
-
-@-moz-keyframes anim_slides 
+.slick-list 
 {
-    0% {
-        opacity:0;
-    }
-    6% {
-        opacity:1;
-    }
-    24% {
-        opacity:1;
-    }
-    30% {
-        opacity:1;
-    }
-    100% {
-        opacity:0;
-    }
+    overflow: hidden;
 }
 
-.slides ul li {
-    opacity:0;
-    position:absolute;
-    top:0;
-
-    -webkit-animation-name: anim_slides;
-    -webkit-animation-duration: 8.0s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: normal;
-    -webkit-animation-delay: 0;
-    -webkit-animation-play-state: running;
-    -webkit-animation-fill-mode: forwards;
-
-    -moz-animation-name: anim_slides;
-    -moz-animation-duration: 8.0s;
-    -moz-animation-timing-function: linear;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-direction: normal;
-    -moz-animation-delay: 0;
-    -moz-animation-play-state: running;
-    -moz-animation-fill-mode: forwards;
+.slick-track
+{
+    display: flex;
 }
 
-.slides ul  li:nth-child(2), .slides ul  li:nth-child(2) div {
-    -webkit-animation-delay: 4.0s;
-    -moz-animation-delay: 6.0s;
+.slick-arrow
+{
+    position: absolute;
+    z-index: 1000; 
+    margin-top: -30px;
+    font-size: 0;
+    width: 34px;
+    height: 61px;
+}
+
+ .slick-arrow.slick-prev
+{
+    background: url('images/left_arrow.png') 0 0 no-repeat;
+    cursor: pointer;
+    margin-bottom: 184px;
+    top: 490px;
+    left: 15.0%;
+} 
+
+.slick-arrow.slick-next
+{
+    margin-bottom: 184px;
+    top: 490px;
+    left: 80%;
+    background: url('images/_right_arrow.png') 0 0 no-repeat;
+  
 }
 
 
-.slides ul  li:nth-child(3), .slides ul  li:nth-child(3) div {
-    -webkit-animation-delay: 8.0s;
-    -moz-animation-delay: 10.0s;
-}
+.slick-arrow.slick-disabled{}
 
+.slick-dots{}
+
+.slick-dots li{}
+
+.slick-dots li.slick-active{}
+
+
+.slick-dots li button{}
+
+
+.arrow 
+{
+    width: 34px;
+    height: 61px;
+}
 
 .crumbs
 {
@@ -114,8 +93,22 @@
     box-sizing: border-box;
     display: flex;
     margin: 0 auto;
+    color: #767676;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 18px;
+}
+
+
+
+.crumbs a 
+{
     text-decoration: underline;
 }
+
 
 .product
 {
@@ -185,7 +178,7 @@
    font-weight: 400;
    font-style: normal;
    letter-spacing: normal;
-   line-height: 22px;
+   margin: 0  7.91px;
 
 }
 
@@ -194,8 +187,7 @@
     width: auto;
     padding-left: 10px;
     padding-right: 10px; 
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px auto 26px auto;
     box-sizing: border-box;
 
 }
@@ -222,7 +214,6 @@
     width: auto;
     background-color: black;
     margin-bottom: 29px;
-    /* margin-left: 15px; */
 } 
 
 
@@ -260,16 +251,13 @@ main
 
 }
 
-.content
+.centerblock
 {
     width: 780px;
-    /* max-width: 100% ; */
     margin-top: 26px;
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    /* margin-right: auto; */
-   
+    margin-left: auto;  
 }
 
 .menu_catalog
@@ -287,13 +275,7 @@ main
     display: flex;
     padding-left: 0px;
     flex-direction: column;
-    margin-top: 26px;
-    height: 200px;
-    /* margin-bottom: 50px; */
-    /* justify-content: space-between; */
-    /* background-color: brown; */
-    
-    
+    height: 200px; 
 }
 
 .first_catalog
@@ -311,29 +293,6 @@ main
     flex-wrap: wrap;
 } 
 
-/* .text_block
-{
-    width: 100%;
-} */
-
-/* .text_content
-{
-    width: 100%; 
-    column-count: 2; 
-    -moz-column-count: 2; 
-    -webkit-column-count: 2; 
-    column-gap: 40px; 
-    -moz-column-gap: 40px;
-    -webkit-column-gap: 40px;
-    color: #767676;
-    font-family: "PT Sans";
-    font-size: 14px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 22px; 
-    /* margin-left: 15px;  */
-
 .textcols 
 {
     overflow: hidden;
@@ -344,6 +303,7 @@ main
     font-style: normal;
     letter-spacing: normal;
     line-height: 22px; 
+    margin-bottom: 200px;
 }
 
 .textcols-left 
@@ -368,7 +328,6 @@ main
     letter-spacing: normal;
     line-height: normal;
     list-style-type: none;
-    /* display: none; */
 }
 
 
@@ -434,10 +393,6 @@ main
 
 .excel_image
 {
-    width: 165px;
-    height: 10px;
     padding: 110px 38px 0px 43px;
     box-sizing: border-box;
-    /* background-color: brown; */
-
 }

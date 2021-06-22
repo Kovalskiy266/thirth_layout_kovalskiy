@@ -1,3 +1,4 @@
+/* Стилі для 2 макету */
 @font-face 
 {
     font-family: "open_sans_condensedlight";
@@ -37,7 +38,6 @@ header
     width: 100%;
     margin: 0 auto;
     display: flex;
-    /* overflow: hidden; */
     flex-direction: column;
     min-height: 100vh;
     height: 100%; 
@@ -49,10 +49,8 @@ header
     width: 1000px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 65px;
-    padding-bottom: 65px;
     background-color: #dcdcdc;
-    font-size: 45px;
+    font-size: 40px;
     margin: auto;
     display: flex;
     box-sizing: border-box;
@@ -87,6 +85,7 @@ menu
 
     width: 100%;
     font-size: 27px;
+    font-family: "PT Sans";
     padding-top: 26px;
     padding-bottom: 27px;
     padding-left: 10px;
@@ -122,7 +121,7 @@ menu
 
 .content_menu a:hover 
 {
-    text-decoration: underline;
+    border-bottom: 2px solid white;
 }
 
 .content_menu ul 
@@ -139,52 +138,13 @@ menu
     margin: 0px;
 }
 
-/* main 
-{
-    width: 1000px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px; 
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    /* position:absolute; */
-
-    /* flex-direction: wrap;
-    flex-wrap: wrap; */ 
-
-
 footer {
-
     width: 100%;
-    /* position: absolute; */
-    /* max-width: 100%; */
     display: flex;
     margin-top: auto;
     background-color: #777777;
-    box-sizing: border-box;
-    /*  */
-    /* margin-top: 50px; */
-    /* position: relative; */
+    box-sizing: border-box; 
 }
-
-/* .slider 
-{
-    width: 100%;
-    margin-top: 10px;  
-    margin-bottom: 30px;
-}
-
-.slider_image   
-{
-    width: 1248px;
-    height: 462px;
-    position: relative;
-    display: block; 
-    margin: -62px auto 0 auto;
-} */
 
 .sidebar
 {
@@ -273,6 +233,12 @@ a
     color: #767676;
 }
 
+footer a
+{
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 14px;
+}
 
 .underline
 {
@@ -302,6 +268,8 @@ a
     width: 273px;
     height: 100px;
     float: left;
+    margin-top: 65px;
+    margin-bottom: 65px;
 }
 
 .left_footer
@@ -323,7 +291,6 @@ a
     font-style: normal;
     letter-spacing: normal;
     line-height: 26px;
-    /* text-align: left; */
     text-decoration: underline;
     display: block;
 }
@@ -348,7 +315,7 @@ a
     flex-direction: column;
     margin-left: auto;
     text-align: right;
-    /* width: 260px; */
+    margin-top: 45px;
 }
 
 
